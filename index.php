@@ -1,17 +1,10 @@
 <?php
-require 'lib/utils.php';
+require 'router.php';
 
-$uri = $_SERVER['REQUEST_URI'];
+$router = new Router();
 
-$routes = [
-    '/php-origin/' => 'controllers/index.php',
-    '/php-origin/about' => 'controllers/about.php',
-    '/php-origin/contact' => 'controllers/contact.php',
-];
+$router->add('/php-origin/', 'pages/home.php');
+$router->add('/php-origin/about', 'pages/about.php');
 
-if (array_key_exists($uri, $routes)) {
-    require $routes[$uri];
-} else {
-    http_response_code(404);
-    echo 'Error: Page Not Found';
-}
+$router->route($_SERVER['REQUEST_URI']);
+?>

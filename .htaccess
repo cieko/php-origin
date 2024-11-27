@@ -1,6 +1,5 @@
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
+RewriteBase /php-origin/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /das/index.php [L]
+RewriteRule ^(.*)$ index.php [L]
