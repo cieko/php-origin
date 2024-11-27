@@ -1,5 +1,6 @@
 <?php
 require 'router.php';
+require 'lib/utils.php';
 
 $router = new Router();
 
