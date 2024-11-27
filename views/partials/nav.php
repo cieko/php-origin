@@ -8,9 +8,9 @@
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="/php-origin/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-            <a href="/php-origin/about.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-            <a href="/php-origin/contact.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+            <a href="/php-origin/" class="<?= urlIs('/php-origin/') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+            <a href="/php-origin/about.php" class="<?= urlIs('/php-origin/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> block rounded-md px-3 py-2 text-base font-medium">About</a>
+            <a href="/php-origin/contact.php" class="<?= urlIs('/php-origin/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> block rounded-md px-3 py-2 text-base font-medium">Contact</a>
           </div>
         </div>
       </div>
