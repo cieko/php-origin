@@ -92,5 +92,5 @@ $filteredBooks = array_filter($books, function ($book) {
 
 
 
-require './index.view.php';
+require './views/index.view.php';
 
