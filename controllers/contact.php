@@ -2,6 +2,4 @@
 
 $heading = 'Contact Us';
 
-require '../lib/utils.php';
-
-require './views/contact.view.php';
+require 'views/contact.view.php';
