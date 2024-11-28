@@ -2,7 +2,7 @@
 
 <!-- partial -->
 <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-<script src="scripts/main.js"></script>
+<script src="scripts/main.js" type="module"></script>
 
 </body>
 
