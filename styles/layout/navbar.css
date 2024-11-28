@@ -16,7 +16,7 @@ nav h1 {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--pill);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: var(--red);
   padding: 5px 10px;
 }
